@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    align-items: center;
+    justify-items: center;
     background: rgb(11,95,255);
     background: linear-gradient(135deg, rgba(11,95,255,1) 0%, rgb(2, 15, 134) 100%);
     height: 70px;
@@ -16,20 +18,34 @@
     color: rgb(202, 221, 255);
     font-weight: 600;
     min-width: 218px;
+    justify-self: start;
   }
   
   /* Search */
-  .search-element:active, .search-element{
+  .search-element:focus, .search-element{
     border: none;
+    outline: none;
+  }
+
+  .search-element{
+    min-width: 100%;
   }
   .search-bar{
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    justify-items: center;
+    align-items: center;
+    gap: 4px;
     background-color: #fff;
     width: 500px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 8px;
+    border-radius: 8px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
-  
+
+  .search-bar button{
+    padding: 0;
+  }
   /* /Search */
   .header-elements{
     justify-self: end;
