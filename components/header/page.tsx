@@ -1,0 +1,56 @@
+import Image from "next/image";
+import styles from "./header.module.css";
+import slack from "../../public/images/header/slack.webp"
+import profilepic from "../../public/images/header/perfil.webp"
+import notif from "../../public/images/header/notificacao.webp"
+const Header = () =>{
+    return <div className={ styles.container }>
+        <header>
+                <h1 className={styles.title}>Liferay User Group</h1>
+
+                <div className={styles["search-bar"]}>		
+                    <div className={styles["search-bar-icon"]}>
+                        {/* adicionar botao de filtragem */}
+                    </div>
+                    <input id="search" type="text" className={styles["search-element"]} placeholder="Pesquisar"/>
+                </div>
+
+                <div className={styles["header-elements"]}>
+                    <ul className={styles["header-elements-container"]}>
+                        <li className={styles["header-elements-icon"]}>
+                            <button className={styles["header-elements-button"]}>
+                                <Image 
+                                    src={slack}
+                                    alt="Slack"
+                                    width= {40}
+                                    height={40}
+                                />
+                            </button>
+                        </li>
+                        <li className={styles["header-elements-icon"]}>
+                            <button className={styles["header-elements-button"]}>
+                            <Image 
+                                    src={notif}
+                                    alt="Notificações"
+                                    width= {40}
+                                    height={40}
+                                />
+                            </button>
+                        </li>
+                        <li className={styles["header-elements-icon"]}>
+                            <button className={styles["header-elements-button"]}>
+                            <Image 
+                                    src={profilepic}
+                                    alt="Perfil"
+                                    width= {40}
+                                    height={40}
+                                />
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+        </header>
+    </div>
+}
+
+export default Header;
