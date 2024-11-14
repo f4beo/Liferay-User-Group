@@ -7,7 +7,7 @@ import filter from "../../public/images/header/filter.svg"
 import magglass from "../../public/images/header/search.webp"
 const Header = () =>{
     return <div className={ styles.container }>
-        <header>
+        <header className={styles.header}>
                 <h1 className={styles.title}>Liferay User Group</h1>
 
                 <div className={styles["search-bar"]}>		
