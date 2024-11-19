@@ -1,11 +1,13 @@
+
 .container{
   background: rgb(11,95,255);
   background: linear-gradient(135deg, rgba(11,95,255,1) 0%, rgb(2, 15, 134) 100%);
   box-shadow: rgba(56, 56, 56, 0.4) 0px 8px 15px;
   padding: 12px 80px;
-
+  
   .header{
     margin: 0 auto;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -55,12 +57,15 @@
   /* /Search */
   .header-elements{
     justify-self: end;
-  }
-  .header-elements-container{
-    display: flex;
-    gap: 30px;
+    .header-elements-container{
+      display: flex;
+      gap: 30px;
+      .header-elements-icon img{
+        height: 40px;
+      }
+    }
   }
   
-  .header-elements-icon img{
-    height: 40px;
-  }
+  /* .header-margin-bottom{
+    margin-bottom: 69px;
+  } */

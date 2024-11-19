@@ -6,7 +6,8 @@ import notif from "../../public/images/header/notificacao.webp"
 import filter from "../../public/images/header/filter.svg"
 import magglass from "../../public/images/header/search.webp"
 const Header = () =>{
-    return <div className={ styles.container }>
+    return <>
+    <div className={ styles.container }>
         <header className={styles.header}>
                 <h1 className={styles.title}>Liferay User Group</h1>
 
@@ -66,6 +67,10 @@ const Header = () =>{
                 </div>
         </header>
     </div>
+
+    <div className={styles["header-margin-bottom"]}></div>
+    </>
+    
 }
 
 export default Header;
