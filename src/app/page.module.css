@@ -1,18 +1,18 @@
-.main-content{
-    max-width: 1600px;
-    padding: 0 80px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 320px minmax(0, 1fr);
-    grid-template-areas: "aside main";
-    gap: 24px;
-    height: calc(100vh - 69px);
-    overflow: hidden;
-    .aside{
-        grid-area: aside;
-    }
-    
-    .main{
-        grid-area: main;
-    }
+.main-content {
+  max-width: 1600px;
+  padding: 0 80px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-areas: "aside main";
+  gap: 24px;
+  height: calc(100vh - 69px);
+  overflow: hidden;
+  .aside {
+    grid-area: aside;
+  }
+
+  .main {
+    grid-area: main;
+  }
 }

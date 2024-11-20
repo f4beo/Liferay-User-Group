@@ -1,39 +1,40 @@
 * {
-	margin: 0;
-	padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
-a{
-	text-decoration: none;
-	color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-button:active, button{
-	background: none;
-	border: none;
-	outline: none;
+button:active,
+button {
+  background: none;
+  border: none;
+  outline: none;
 }
-button:hover{
-	cursor: pointer;
+button:hover {
+  cursor: pointer;
 }
 
 .meetup-container {
-	padding: 12px;
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 12px;
-	max-height: calc(100vh - 120px);
-	overflow-y: scroll; /* Permite rolar */
-	scrollbar-width: none;  /* Para o Firefox */
-	-ms-overflow-style: none;  /* Para IE/Edge */
-  }
-  
-  .meetup-container::-webkit-scrollbar {
-	display: none;
-  }
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  max-height: calc(100vh - 120px);
+  overflow-y: scroll; /* Permite rolar */
+  scrollbar-width: none; /* Para o Firefox */
+  -ms-overflow-style: none; /* Para IE/Edge */
+}
+
+.meetup-container::-webkit-scrollbar {
+  display: none;
+}

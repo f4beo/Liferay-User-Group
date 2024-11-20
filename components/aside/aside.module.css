@@ -1,43 +1,43 @@
-.aside{
-    padding-top: 12px;
-    overflow: hidden;
-    .aside-container{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        .title{
-            font-size: 1.4rem;
-            text-align: center;
-            align-self: center;
-        }
-        .meetup-container{
-            padding: 12px;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 12px;
-            max-height: calc(100vh - 120px);
-            overflow-y: scroll;
-            scrollbar-width: 0px;
-            -ms-overflow-style: none;
-        }
+.aside {
+  padding-top: 12px;
+  overflow: hidden;
+  .aside-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    .title {
+      font-size: 1.4rem;
+      text-align: center;
+      align-self: center;
     }
+    .meetup-container {
+      padding: 12px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      max-height: calc(100vh - 120px);
+      overflow-y: scroll;
+      scrollbar-width: 0px;
+      -ms-overflow-style: none;
+    }
+  }
 }
 
-.scroll{
-    height: 1000px;
-    width: 20px;
-    text-align: center;
-    padding: 20px;
-    font-size: large;
-    background-color: violet;
+.scroll {
+  height: 1000px;
+  width: 20px;
+  text-align: center;
+  padding: 20px;
+  font-size: large;
+  background-color: violet;
 }
-.aside.meetup-container::-webkit-scrollbar{
-    display: none;
+.aside.meetup-container::-webkit-scrollbar {
+  display: none;
 }
 .meetup-container::-webkit-scrollbar-thumb {
-    background: transparent;
+  background: transparent;
 }
-  
-  .meetup-container::-webkit-scrollbar-track {
-    background: transparent;
+
+.meetup-container::-webkit-scrollbar-track {
+  background: transparent;
 }
