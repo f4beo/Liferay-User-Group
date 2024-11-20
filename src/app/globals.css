@@ -30,9 +30,9 @@ button:hover {
   grid-template-columns: 1fr;
   gap: 12px;
   max-height: calc(100vh - 120px);
-  overflow-y: scroll; /* Permite rolar */
-  scrollbar-width: none; /* Para o Firefox */
-  -ms-overflow-style: none; /* Para IE/Edge */
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .meetup-container::-webkit-scrollbar {

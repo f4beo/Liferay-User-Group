@@ -1,6 +1,6 @@
 import Image from "next/image";
 import style from "./card.module.css";
-import { CardMeetup } from "../../src/data/meetup";
+import { CardMeetup } from "../../../src/data/meetup";
 
 export function Card({ meetup }: { meetup: CardMeetup }) {
   return (
