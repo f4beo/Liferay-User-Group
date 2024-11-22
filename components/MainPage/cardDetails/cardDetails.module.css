@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+.banner {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.meetup-title {
+  .title {
+    font-size: 1.6em;
+    margin-bottom: 12px;
+  }
+  .meetup-id {
+    font-size: 1em;
+  }
+}
+
+.meetup-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.speakers {
+  display: flex;
+  gap: 12px;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  .speaker-name {
+    font-weight: 500;
+  }
+  .speaker-desc {
+    font-size: 0.8em;
+  }
+}
+.date-time {
+  display: flex;
+  flex-direction: column;
+}
