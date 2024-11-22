@@ -24,21 +24,6 @@ button:hover {
   cursor: pointer;
 }
 
-.meetup-container {
-  padding: 12px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-  max-height: calc(100vh - 120px);
-  overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.meetup-container::-webkit-scrollbar {
-  display: none;
-}
-
 .hide-scroll {
   overflow-y: scroll;
   scrollbar-width: none;

@@ -4,7 +4,9 @@ export default function Aside({ children }: { children: React.ReactNode }) {
     <aside className={styles.aside}>
       <div className={styles["aside-container"]}>
         <h2 className={styles.title}>Recentes</h2>
-        <ul className="meetup-container">{children}</ul>
+        <ul className={`${styles["meetup-container"]} hide-scroll`}>
+          {children}
+        </ul>
       </div>
     </aside>
   );
