@@ -31,10 +31,10 @@
       padding: 6px 12px;
       background-color: rgba(0, 1, 0, 0.288);
       transition: 0.3s;
-      &:hover {
+      /* &:hover {
         background-color: rgba(0, 1, 0, 0.4);
         cursor: pointer;
-      }
+      } */
     }
   }
 }

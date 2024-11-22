@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-background {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  z-index: 10;
+  max-height: 534px;
+  height: 100%;
+  max-width: calc(34rem - 96px);
+  width: 100%;
+  border-radius: 24px;
+  padding: 36px;
+  background: rgb(99, 148, 241);
+  background: linear-gradient(
+    135deg,
+    rgba(99, 148, 241, 1) 0%,
+    rgba(19, 54, 121, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
