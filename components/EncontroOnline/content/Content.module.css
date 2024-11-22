@@ -1,0 +1,56 @@
+.content {
+  flex: 2;
+  min-width: 300px;
+  margin: 15px;
+}
+
+.imageContainer img {
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.meetupOnlineTitulo {
+  margin: 0px;
+  font-size: clamp(1.5em, 2.5vw, 2em);
+}
+
+.meetupId {
+  font-size: clamp(1em, 1.5vw, 1.2em);
+  margin-bottom: 10px;
+}
+
+.eventInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.views {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.shareButton {
+  background-color: #00a0e4;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hostInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hostInfo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
