@@ -38,3 +38,13 @@ button:hover {
 .meetup-container::-webkit-scrollbar {
   display: none;
 }
+
+.hide-scroll {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
