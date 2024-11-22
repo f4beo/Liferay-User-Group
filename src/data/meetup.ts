@@ -1,4 +1,4 @@
-interface Authors {
+interface Speaker {
   nome: string;
   desc: string;
 }
@@ -12,7 +12,7 @@ export interface CardMeetup {
   data: string;
   hora: string;
   tags: string[];
-  palestrantes: Authors[];
+  palestrantes: Speaker[];
 }
 export const meetup = [
   {
