@@ -59,34 +59,6 @@ yarn install
 
 ---
 
-### **3. Configurar Variáveis de Ambiente**
-
-1. Renomeie o arquivo `.env.example` para `.env`.
-2. Insira as configurações necessárias, como URL da API e chave do Slack:
-
-   ```env
-   REACT_APP_API_URL=http://localhost:3000
-   REACT_APP_SLACK_URL=https://seuslack.com/link
-   ```
-
----
-
-### **4. Configurar o Backend Mock (JSON Server)**
-
-1. Instale o JSON Server globalmente (caso ainda não tenha):
-
-   ```bash
-   npm install -g json-server
-   ```
-
-2. Execute o servidor de mock de dados:
-
-   ```bash
-   json-server --watch db.json --port 3000
-   ```
-
----
-
 ### **5. Executar o Frontend**
 
 Inicie o servidor de desenvolvimento do React:
@@ -100,7 +72,7 @@ yarn dev
 ```
 
 Acesse a aplicação no navegador:  
-`http://localhost:8080`
+`http://localhost:****`
 
 ---
 
