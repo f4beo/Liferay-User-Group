@@ -1,0 +1,124 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Primeiro post",
+      "content": "Primeiro post de teste para conferir se deu certo a implementação de posts baseado no array em data/posts.ts, Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi reiciendis, assumenda excepturi cum, laborum sequi debitis impedit nobis magni sed eveniet minima ut amet eos necessitatibus tempora dolor suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fugiat qui quis illo, nesciunt unde magni saepe delectus neque a eos consequatur ex vitae, optio similique architecto sed adipisci nisi Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quasi reiciendis, assumenda excepturi cum, laborum sequi debitis impedit nobis magni sed eveniet minima ut amet eos necessitatibus tempora dolor suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fugiat qui quis illo, nesciunt unde magni saepe delectus neque a eos consequatur ex vitae, optio similique architecto sed adipisci nisi.",
+      "comments": 300,
+      "likes": 10992
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "title": "Segundo post",
+      "content": "Segundo post para testar se a funcionalidade de colocar mais posts baseado no array de posts está funcionando",
+      "comments": 4,
+      "likes": 18000
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Terceiro post",
+      "content": "Terceiro post para testar se a funcionalidade de colocar mais posts baseado no array de posts está funcionando",
+      "comments": 3,
+      "likes": 1800
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "title": "Quarto post",
+      "content": "Quarto post para testar se a funcionalidade de colocar mais posts baseado no array de posts está funcionando",
+      "comments": 113,
+      "likes": 19000
+    }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "username": "Fábio",
+      "profilePic": "https://static.thenounproject.com/png/1414618-200.png"
+    },
+    {
+      "id": 2,
+      "username": "Leonardo",
+      "profilePic": "https://static.thenounproject.com/png/1414618-200.png"
+    }
+  ],
+
+  "meetup": [
+    {
+      "id": 31,
+      "title": "Construindo uma aplicação Liferay na prática",
+      "banner": "https://img.youtube.com/vi/nM9xs4RuVbY/mqdefault.jpg",
+      "description": "Sem descrição",
+      "likes": 10,
+      "comments": 21,
+      "data": "21/05",
+      "hora": "18:30",
+      "tags": ["Low code", "Inovação", "DXP"],
+      "palestrantes": [
+        {
+          "nome": "José Abelenda",
+          "desc": "Team Lead Liferay"
+        },
+        {
+          "nome": "Fábio Leonardo",
+          "desc": "Estudante ads"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Título do meetup",
+      "banner": "https://img.youtube.com/vi/JF1W6fdjvtA/mqdefault.jpg",
+      "description": "uma descrição",
+      "likes": 28,
+      "comments": 3,
+      "data": "dd/mm/aaaa",
+      "hora": "hh/mm",
+      "tags": [],
+      "palestrantes": [
+        {
+          "nome": "",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "",
+      "banner": "https://img.youtube.com/vi/iMk732r-5D4/mqdefault.jpg",
+      "description": "",
+      "likes": 0,
+      "comments": 0,
+      "data": "dd/mm/aaaa",
+      "hora": "hh/mm",
+      "tags": [],
+      "palestrantes": [
+        {
+          "nome": "",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "",
+      "banner": "https://img.youtube.com/vi/GHUc68SYVWQ/mqdefault.jpg",
+      "description": "",
+      "likes": 0,
+      "comments": 0,
+      "data": "dd/mm/aaaa",
+      "hora": "hh/mm",
+      "tags": [""],
+      "palestrantes": [
+        {
+          "nome": "",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}
