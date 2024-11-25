@@ -1,12 +1,12 @@
 .content {
-  margin-left: 15px;   /* Remove qualquer margem lateral, centralizando */
-  max-width: 850px;    /* Garante uma largura máxima */
-  box-sizing: border-box;  /* Inclui padding e borda na largura total */
+  margin-left: 15px;
+  max-width: 850px;
+  box-sizing: border-box;
 }
 
 .imageContainer{
-  max-width: 830px;  /* Mesmo valor do max-width da imagem */
-  margin: 2px;    /* Centraliza a imagem dentro da div */
+  max-width: 830px;
+  margin: 2px;
 }
 .imageContainer img {
   width: 100%;

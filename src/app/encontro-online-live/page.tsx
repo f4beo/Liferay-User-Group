@@ -1,4 +1,4 @@
-"use client";  // Mantém a diretiva no Next.js
+"use client";
 
 import React from 'react';
 import Header from '../../../components/header/page';
