@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;  /* Mantém o Header acima */
+  gap: 5px;               /* Espaçamento entre Header e conteúdo */
+}
+
+.contentWrapper {
+  margin-top: 5px;
+  display: flex;           /* Ativa o Flexbox */
+  gap: 20px;               /* Espaçamento entre Content e Chat */
+  justify-content: space-between; /* Distribui o espaço entre os elementos */
+}
+
+.contentWrapper > div {
+  flex: 1;                /* Faz os dois componentes ocuparem o mesmo espaço */
+  min-width: 300px;       /* Garante largura mínima para cada componente */
+}
