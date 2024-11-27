@@ -1,15 +1,17 @@
+import styles from "./main.module.css";
+import { useState } from "react";
 import useFetch from "@/useFetch";
 import Post from "../post/page";
-import styles from "./main.module.css";
 import { PostContent } from "@/data/posts";
 import Modal from "../modal/page";
-import { useState } from "react";
-const Main = () => {
-  const {
-    data: posts,
-    isLoading,
-    error,
-  } = useFetch<PostContent[]>("http://localhost:8000/posts");
+import CreatePost from "../createPost/createPost";
+
+interface MainProps {
+  searchQuery: string;
+}
+
+const Main = ({ searchQuery }: MainProps) => {
+  const { data: posts, isLoading, error } = useFetch<PostContent[]>("http://localhost:8000/posts");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -24,20 +26,24 @@ const Main = () => {
         {isLoading && <div>Loading...</div>}
         {posts && (
           <ul className={`${styles["post-list"]} hide-scroll`}>
-            {posts.map((item) => {
-              return <Post key={item.id} post={item} />;
-            })}
-
-            <li className={styles["post-margin-bottom"]}></li>
+            {posts
+              .filter((item) => {
+                return searchQuery.toLowerCase() === null || searchQuery.toLowerCase() === ""
+                  ? item
+                  : item.title.toLowerCase().includes(searchQuery.toLowerCase());
+              })
+              .map((item) => {
+                return <Post key={item.id} post={item} />;
+              })}
           </ul>
         )}
       </div>
-      {/* <button className={styles["btn-create-post"]} onClick={handleToggleModal}>
+      <button className={styles["btn-create-post"]} onClick={handleToggleModal}>
         +
       </button>
       <Modal isOpen={isModalOpen} onClose={handleToggleModal}>
-        <div>oi</div>
-      </Modal> */}
+        <CreatePost onSubmit={handleToggleModal} />
+      </Modal>
     </main>
   );
 };
