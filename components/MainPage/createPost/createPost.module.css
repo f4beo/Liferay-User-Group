@@ -1,0 +1,50 @@
+.container {
+  position: relative;
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.container-title {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.post-form {
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 2px;
+  align-content: center;
+}
+.title-input {
+  font-size: 1rem;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px #bdc0c5;
+  margin-bottom: 12px;
+}
+.text-input {
+  font-size: 0.9rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #bdc0c5;
+  resize: none;
+  height: 100%;
+}
+.text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.submit-btn {
+  color: #dcd5f1;
+  background-color: blue;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 12px;
+  padding: 12px 24px;
+  border-radius: 12px;
+}
