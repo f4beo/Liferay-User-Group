@@ -15,11 +15,6 @@
 .modal-content {
   position: relative;
   z-index: 10;
-  max-height: 534px;
-  height: 100%;
   max-width: calc(34rem - 96px);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

@@ -1,28 +1,28 @@
 .post {
   width: 100%;
-  max-height: 340px;
   /* background: rgba(1, 9, 83, 0.233); */
-  .post-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    .post-header {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: solid 1px black;
-      margin-bottom: 12px;
-      .post-author {
-        display: flex;
-        gap: 12px;
-        align-items: center;
-      }
-    }
-  }
+}
+.post-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px black;
+  margin-bottom: 12px;
+}
+.post-author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 .post-content-container {
   min-height: 130px;
   margin-bottom: 12px;
-  .post-title {
-    margin-bottom: 12px;
-  }
+}
+.post-title {
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
 }

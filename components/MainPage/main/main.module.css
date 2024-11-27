@@ -3,14 +3,13 @@
   height: 100%;
   width: 100%;
   /* background: rgba(0, 0, 0, 0.2); */
-  max-height: calc(100vh - 80px);
+  max-height: calc(100vh - 100px);
 }
-
 .post-container {
   height: 100%;
-  .title {
-    text-align: center;
-  }
+}
+.title {
+  text-align: center;
 }
 .post-list {
   display: flex;
@@ -24,13 +23,15 @@
   margin-top: 30px;
 }
 
-.btn-create-post {
+.btn-create-post,
+.btn-create-post:active {
   position: absolute;
   display: block;
   font-size: 2rem;
   bottom: 100px;
   right: 100px;
-  background-color: blue;
+  background: rgb(9, 78, 206);
+  background: linear-gradient(135deg, rgba(9, 78, 206, 1) 0%, rgb(1, 11, 100) 100%);
   padding: 20px;
   border-radius: 100%;
 }
