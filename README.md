@@ -1,4 +1,3 @@
-```markdown
 # 📋 **Liferay User Group Portal**
 
 O portal centraliza conteúdos e funcionalidades dispersos, facilitando o acesso e a interação de organizadores e membros da comunidade Liferay User Group. A plataforma permite compartilhar conhecimento, participar de meetups e acessar conteúdos exclusivos de forma prática e eficiente.
