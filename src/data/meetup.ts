@@ -3,7 +3,7 @@ interface Speaker {
   desc: string;
 }
 export interface CardMeetup {
-  id: number;
+  number: number;
   title: string;
   banner: string;
   description: string;
