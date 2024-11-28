@@ -41,12 +41,11 @@ export default function Home() {
                 .map((item) => {
                   return <Card key={item.id} meetup={item} onClick={() => handleCardClick(item)} />;
                 })}
-
-              <Modal isOpen={isModalOpen} onClose={closeModal}>
-                {selectedCard && <CardDetails meetup={selectedCard} onClose={closeModal} />}
-              </Modal>
             </Aside>
           )}
+          <Modal isOpen={isModalOpen} onClose={closeModal}>
+            {selectedCard && <CardDetails meetup={selectedCard} onClose={closeModal} />}
+          </Modal>
         </div>
         <div className={styles.main}>
           <Main searchQuery={search} />

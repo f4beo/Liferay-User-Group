@@ -13,9 +13,7 @@ export default function CardDetails({ meetup, onClose }: CardDetailsProps) {
 
       <div className={styles["meetup-title"]}>
         <h3 className={styles.title}>{meetup.title}</h3>
-        {meetup.id && (
-          <span className={styles["meetup-id"]}>Meetup #{meetup.id}</span>
-        )}
+        {meetup.number && <span className={styles["meetup-id"]}>Meetup #{meetup.number}</span>}
       </div>
       <div className={styles["meetup-info"]}>
         <div className={styles["speakers"]}>
