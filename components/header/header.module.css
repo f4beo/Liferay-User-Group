@@ -1,11 +1,11 @@
-
-.container{
-  background: rgb(11,95,255);
-  background: linear-gradient(135deg, rgba(11,95,255,1) 0%, rgb(2, 15, 134) 100%);
+.container {
+  background: rgb(11, 95, 255);
+  background: linear-gradient(135deg, rgba(11, 95, 255, 1) 0%, rgb(2, 15, 134) 100%);
   box-shadow: rgba(56, 56, 56, 0.4) 0px 8px 15px;
-  padding: 12px 80px;
-  
-  .header{
+  padding: 12px 0px;
+
+  .header {
+    padding: 0 3%;
     margin: 0 auto;
     width: 100%;
     display: grid;
@@ -17,55 +17,56 @@
     max-width: 1600px;
   }
 }
-  
-  .title{
-    font-size: 1.5rem;
-    color: rgb(202, 221, 255);
-    font-weight: 600;
-    min-width: 218px;
-    justify-self: start;
-  }
-  
-  /* Search */
-  .search-element:focus, .search-element{
-    border: none;
-    outline: none;
-  }
 
-  .search-element{
-    min-width: 100%;
+.title {
+  font-size: 1.5rem;
+  color: rgb(202, 221, 255);
+  font-weight: 600;
+  min-width: 218px;
+  justify-self: start;
+}
+
+/* Search */
+.search-element:focus,
+.search-element {
+  border: none;
+  outline: none;
+}
+
+.search-element {
+  min-width: 100%;
+}
+.search-bar {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  justify-items: center;
+  align-items: center;
+  gap: 4px;
+  background-color: #fff;
+  width: 500px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  & button {
+    padding: 0;
   }
-  .search-bar{
-    display: grid;
-    grid-template-columns: 30px 1fr 30px;
-    justify-items: center;
-    align-items: center;
-    gap: 4px;
-    background-color: #fff;
-    width: 500px;
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      & button{
-        padding: 0;
-      }
-  }
+}
 /* 
   .search-bar button{
     
   } */
-  /* /Search */
-  .header-elements{
-    justify-self: end;
-    .header-elements-container{
-      display: flex;
-      gap: 30px;
-      .header-elements-icon img{
-        height: 40px;
-      }
+/* /Search */
+.header-elements {
+  justify-self: end;
+  .header-elements-container {
+    display: flex;
+    gap: 30px;
+    .header-elements-icon img {
+      height: 40px;
     }
   }
-  
-  /* .header-margin-bottom{
+}
+
+/* .header-margin-bottom{
     margin-bottom: 69px;
   } */

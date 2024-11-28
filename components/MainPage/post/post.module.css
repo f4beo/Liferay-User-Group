@@ -1,6 +1,8 @@
 .post {
   width: 100%;
-  /* background: rgba(1, 9, 83, 0.233); */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .post-wrapper {
   display: flex;
