@@ -54,6 +54,11 @@
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+.commentForm img{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
 
 .commentForm button {
   padding: 8px 10px;
