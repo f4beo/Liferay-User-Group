@@ -22,7 +22,7 @@ const Content: React.FC = () => {
       </div>
       <div className={styles.hostRating}></div>
       <div className={styles.host}>
-        <h3>Hospedado por:</h3>
+        <h3>Hospedado por</h3>
         <div className={styles.hostInfo}>
           <img src="/images/encontro online/anne pic.jpeg" alt="Anne Durey" />
           <p>Anne Durey</p>
