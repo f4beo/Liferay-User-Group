@@ -1,0 +1,35 @@
+.post {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.post-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  position: relative;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px black;
+  margin-bottom: 12px;
+}
+.post-author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.post-content-container {
+  min-height: 130px;
+  margin-bottom: 12px;
+}
+.post-title {
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.post-stats:hover {
+  cursor: pointer;
+}

@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📋 **Liferay User Group Portal**
 
-## Getting Started
+O portal centraliza conteúdos e funcionalidades dispersos, facilitando o acesso e a interação de organizadores e membros da comunidade Liferay User Group. A plataforma permite compartilhar conhecimento, participar de meetups e acessar conteúdos exclusivos de forma prática e eficiente.
 
-First, run the development server:
+---
+
+## 🚀 **Funcionalidades Principais**
+
+- Centralização de conteúdos e eventos;
+- Criação e gerenciamento de meetups;
+- Publicação de posts pela comunidade;
+- Redirecionamento integrado para chat no Slack;
+
+---
+
+## 🛠️ **Tecnologias Utilizadas**
+
+### **Frontend:**
+
+- React.js + next.js + Typescript
+- CSS Modules
+
+### **Backend:**
+
+- Mock de dados com API JSON (JSON Server)
+
+### **Gerenciamento de Versão:**
+
+- Git e GitHub (com GitFlow)
+
+---
+
+## 💻 **Passo a Passo de Implantação**
+
+### **1. Clonar o Repositório**
+
+Abra o terminal e clone o projeto:
+
+```bash
+git clone https://github.com/seu-usuario/liferay-portal.git
+cd liferay-portal
+```
+
+---
+
+### **2. Instalar Dependências**
+
+No diretório raiz, instale as dependências do projeto:
+
+```bash
+npm install
+```
+
+_Ou, se estiver usando Yarn:_
+
+```bash
+yarn install
+```
+
+---
+
+### **3. Configurar o Backend Mock (JSON Server)**
+
+1. Instale o JSON Server globalmente (caso ainda não tenha):
+
+   ```bash
+   npm install -g json-server
+   ```
+
+2. Execute o servidor de mock de dados:
+
+   ```bash
+   json-server --watch db.json --port 8000
+   ```
+
+---
+
+### **4. Executar o Frontend**
+
+Inicie o servidor de desenvolvimento do React:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+_Ou com Yarn:_
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Acesse a aplicação no navegador:  
+`http://localhost:****`
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 **Contribuindo com o Projeto**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Crie um fork do repositório.
+2. Clone o fork em sua máquina local.
+3. Crie uma nova branch para sua funcionalidade ou correção:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git checkout -b feature/nome-da-feature
+   ```
 
-## Deploy on Vercel
+4. Após fazer as alterações, envie um Pull Request para a branch `develop` com título e descrição detalhados.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
