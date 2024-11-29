@@ -12,7 +12,7 @@ const App = ({ params }: { params: Promise<{ id: string }> }) => {
   const [meetup, setMeetup] = useState<CardMeetup | null>(null);
 
   useEffect(function getElement() {
-    fetch("http://localhost:8000/meetup/" + id)
+    fetch("https://api-liferay.onrender.com/meetup/" + id)
       .then((res) => {
         if (res.ok) {
           return res.json();
