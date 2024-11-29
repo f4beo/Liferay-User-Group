@@ -1,16 +1,23 @@
-import React from 'react';
-import styles from './Content.module.css';
+import React from "react";
+import styles from "./Content.module.css";
+import { CardMeetup } from "@/data/meetup";
 
-const Content: React.FC = () => {
+interface ContentProps {
+  meetup: CardMeetup;
+}
+
+const Content = ({ meetup }: ContentProps) => {
   return (
     <div className={styles.content}>
       <div className={styles.imageContainer}>
-        <img src="/images/encontro online/meetup 1510.png" alt="" />
+        <img src={meetup.banner} alt="" />
       </div>
-      <h2 className={styles.meetupOnlineTitulo}>Novidades sobre Busca: do básico ao avançado, novos recursos</h2>
-      <p className={styles.meetupId}>Meetup #37</p>
+      <h2 className={styles.meetupOnlineTitulo}>{meetup.title}</h2>
+      <p className={styles.meetupId}>Meetup #{meetup.id}</p>
       <div className={styles.eventInfo}>
-        <span className={styles.views}>59 <img src="/images/encontro online/olho.png" alt="" /></span>
+        <span className={styles.views}>
+          59 <img src="/images/encontro online/olho.png" alt="" />
+        </span>
         <div className={styles.rating}>
           <img src="/images/encontro online/estrela-full.png" alt="" />
           <img src="/images/encontro online/estrela-full.png" alt="" />
@@ -30,13 +37,7 @@ const Content: React.FC = () => {
       </div>
       <div className={styles.descriptionSection}>
         <h3 className={styles.descriptionTitle}>Descrição</h3>
-        <p className={styles.descriptionText}>
-          Ao longo do último ano, muitas novidades chegaram à Busca no Liferay. Vamos explorar as novas funcionalidades, do básico ao avançado. Este é o seu guia para explorar ao máximo as capacidades de Busca presentes nativamente no Liferay.
-          <br/>
-          E para isso, vamos receber uma dupla de palestrantes. Stephane Miranda e Davi Costa mostrarão de forma prática como extrair mais valor da Busca. Este é um componente fundamental do Liferay DXP. A pesquisa potencializa os resultados de pesquisa para seus sites, mas também pode ser personalizada e configurada para fazer muito mais!
-          <br/>
-          Use a Pesquisa para criar menus de navegação dinâmicos com base em categorias, aumentar os resultados da pesquisa para conteúdo importante ou usá-la para apresentar uma experiência de conteúdo dinâmica aos usuários.
-        </p>
+        <p className={styles.descriptionText}>{meetup.description}</p>
       </div>
     </div>
   );

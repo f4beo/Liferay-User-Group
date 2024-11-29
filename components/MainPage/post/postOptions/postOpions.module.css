@@ -1,0 +1,30 @@
+.modal {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-inline: 4px;
+}
+.option:first-child {
+  border-bottom: solid 1px #afafaf;
+}
+
+.option button {
+  padding: 12px 40px;
+  width: 100%;
+  transition: 0.1s;
+}
+
+.option button:hover {
+  background-color: #f0efef;
+}
+
+.option button:active {
+  background-color: #8f8f8f;
+}

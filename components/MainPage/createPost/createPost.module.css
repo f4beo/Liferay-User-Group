@@ -41,7 +41,8 @@
 }
 .submit-btn {
   color: #dcd5f1;
-  background-color: blue;
+  background: rgb(11, 95, 255);
+  background: linear-gradient(135deg, rgba(11, 95, 255, 1) 0%, rgb(2, 15, 134) 100%);
   font-size: 0.8rem;
   font-weight: bold;
   margin: 12px;

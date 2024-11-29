@@ -29,7 +29,7 @@ const useFetch = <T>(url: string) => {
       });
     return () => abortCont.abort();
   }, [url]);
-  return { data, isLoading, error };
+  return { data, isLoading, error, setData };
 };
 
 export default useFetch;

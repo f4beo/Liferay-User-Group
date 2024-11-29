@@ -1,9 +1,19 @@
 {
   "posts": [
     {
-      "id": "e3d7",
-      "title": "Minha primeira posatgem na plataforma da LUG",
-      "content": "Um momento muito importante"
+      "id": "2b26",
+      "title": "Minha segunda postagem no portal",
+      "content": "Esta é a minha segunda postagem na plataforma da liferay user group"
+    },
+    {
+      "id": "7da7",
+      "title": "Segunda postagem no LUG",
+      "content": "Esta é a segunda postagem para teste de funcionalidade"
+    },
+    {
+      "id": "cd9d",
+      "title": "Teste de tamanho",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra eu magna facilisis finibus. Quisque eu pretium ligula, ac lobortis arcu. Phasellus erat metus, blandit sit amet tincidunt vitae, pellentesque eget urna. Donec nec pharetra purus. Duis fermentum risus eu odio condimentum, vel auctor mauris mollis. Donec et massa convallis, lacinia felis eget, euismod est. Aliquam porttitor suscipit orci, eget rutrum quam luctus ut. Suspendisse et fermentum est. Ut dolor nibh, eleifend in neque et, lacinia imperdiet tortor. Duis sit amet metus vel nisi tristique hendrerit.\n\nCurabitur euismod massa lorem, in maximus elit porttitor sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in libero sem."
     }
   ],
   "users": [
@@ -80,18 +90,18 @@
     },
     {
       "id": "34",
-      "title": "",
+      "title": "Container wars: Os logs contra-atacam. Analisando content dump",
       "banner": "https://img.youtube.com/vi/GHUc68SYVWQ/mqdefault.jpg",
-      "description": "",
+      "description": "Container wars: Os logs contra-atacam - Como analisar content dumps na sua aplicação Liferay. Você aprenderá a interpretar e analisar esses dumps para diagnosticar falhas de desempenho, identificar vazamentos de memória e desvendar a causa raiz de problemas que podem comprometer a estabilidade do sistema. Além disso, vamos abordar como essas técnicas podem ser aplicadas para melhorar a observabilidade e garantir a saúde contínua de suas aplicações. Prepare-se para uma imersão em técnicas avançadas de análise e diagnóstico que vão te transformar em um verdadeiro mestre Jedi dos logs. Traga suas dúvidas e curiosidades, e saia pronto para enfrentar qualquer desafio que o seu ambiente Liferay possa apresentar!",
       "likes": 0,
       "comments": 0,
       "data": "",
       "hora": "",
-      "tags": [""],
+      "tags": [],
       "palestrantes": [
         {
-          "nome": "",
-          "desc": ""
+          "nome": "Richard Jeremias",
+          "desc": "Software Engineer na Liferay"
         }
       ]
     }

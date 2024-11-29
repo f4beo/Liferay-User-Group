@@ -21,7 +21,6 @@ export default function Home() {
     setIsModalOpen(true);
     // console.info(isModalOpen);
   };
-
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedCard(null);
@@ -38,8 +37,8 @@ export default function Home() {
                 .filter((item) => {
                   return search.toLowerCase() === "" ? item : item.title.toLowerCase().includes(search.toLowerCase());
                 })
-                .map((item) => {
-                  return <Card key={item.id} meetup={item} onClick={() => handleCardClick(item)} />;
+                .map((item, i) => {
+                  return <Card key={i} meetup={item} onClick={() => handleCardClick(item)} />;
                 })}
             </Aside>
           )}

@@ -2,6 +2,7 @@ export interface UserData {
   id: number;
   username: string;
   profilePic: string;
+  role: string;
 }
 
 export interface PostContent {

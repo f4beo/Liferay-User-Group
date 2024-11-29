@@ -1,8 +1,12 @@
 import { useState } from "react";
 import styles from "./createPost.module.css";
 
+interface PostType {
+  title: string;
+  content: string;
+}
 interface CreatePostProps {
-  onSubmit: () => void;
+  onSubmit: (title: string, body: string) => void;
 }
 
 const CreatePost = ({ onSubmit }: CreatePostProps) => {
@@ -12,16 +16,7 @@ const CreatePost = ({ onSubmit }: CreatePostProps) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const post = { title, content };
-    setLoading(true);
-    fetch("http://localhost:8000/posts", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(post),
-    }).then(() => {
-      setLoading(false);
-      onSubmit();
-    });
+    onSubmit(title, content);
   };
 
   return (

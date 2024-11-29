@@ -27,13 +27,21 @@
 
 .btn-create-post,
 .btn-create-post:active {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  color: #fafafa;
+  height: fit-content;
   position: absolute;
-  display: block;
-  font-size: 0;
-  bottom: 10%;
-  right: 10%;
+  font-size: 2rem;
+  bottom: 4%;
+  right: 4%;
   background: rgb(9, 78, 206);
   background: linear-gradient(135deg, rgba(9, 78, 206, 1) 0%, rgb(1, 11, 100) 100%);
   padding: 20px;
   border-radius: 100%;
+}
+
+.btn-create-post:active {
+  filter: brightness(80%);
 }

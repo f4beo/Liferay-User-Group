@@ -30,3 +30,6 @@
   margin-bottom: 12px;
   font-family: "Poppins", sans-serif;
 }
+.post-stats:hover {
+  cursor: pointer;
+}
