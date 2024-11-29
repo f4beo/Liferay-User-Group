@@ -7,7 +7,13 @@ import Chat from "../../../../components/EncontroOnline/chat/chat";
 import styles from "./encontro-online-live.module.css";
 import { CardMeetup } from "@/data/meetup";
 
-const App = ({ params }) => {
+interface Props {
+  params: {
+    id: number | string;
+  };
+}
+
+const App = ({ params }: Props) => {
   const [meetup, setMeetup] = useState<CardMeetup | null>(null);
 
   useEffect(function getElement() {
