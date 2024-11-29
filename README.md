@@ -1,4 +1,3 @@
-```markdown
 # 📋 **Liferay User Group Portal**
 
 O portal centraliza conteúdos e funcionalidades dispersos, facilitando o acesso e a interação de organizadores e membros da comunidade Liferay User Group. A plataforma permite compartilhar conhecimento, participar de meetups e acessar conteúdos exclusivos de forma prática e eficiente.
@@ -9,9 +8,8 @@ O portal centraliza conteúdos e funcionalidades dispersos, facilitando o acesso
 
 - Centralização de conteúdos e eventos;
 - Criação e gerenciamento de meetups;
-- Publicação de posts e guias pela comunidade;
+- Publicação de posts pela comunidade;
 - Redirecionamento integrado para chat no Slack;
-- Menu interativo com vídeos salvos e histórico de eventos.
 
 ---
 
@@ -59,7 +57,23 @@ yarn install
 
 ---
 
-### **5. Executar o Frontend**
+### **3. Configurar o Backend Mock (JSON Server)**
+
+1. Instale o JSON Server globalmente (caso ainda não tenha):
+
+   ```bash
+   npm install -g json-server
+   ```
+
+2. Execute o servidor de mock de dados:
+
+   ```bash
+   json-server --watch db.json --port 3000
+   ```
+
+---
+
+### **4. Executar o Frontend**
 
 Inicie o servidor de desenvolvimento do React:
 
@@ -76,7 +90,7 @@ Acesse a aplicação no navegador:
 
 ---
 
-### 📲 **6. (Opcional) Executar em Ambiente Mobile**
+### 📲 **5. (Opcional) Executar em Ambiente Mobile**
 
 Se desejar executar em um simulador:
 

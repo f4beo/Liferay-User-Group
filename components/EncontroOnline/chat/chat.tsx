@@ -24,6 +24,7 @@ const MeetupChat: React.FC = () => {
       </div>
       <form className={styles.commentForm}>
         <input type="text" placeholder="Comentar" />
+        <img src="/images/Encontro Online/feliz.png" alt="" />
         <button>Enviar</button>
       </form>
     </div>
