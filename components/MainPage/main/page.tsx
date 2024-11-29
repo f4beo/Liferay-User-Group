@@ -12,7 +12,12 @@ interface MainProps {
 }
 
 const Main = ({ searchQuery }: MainProps) => {
-  const { data: posts, isLoading, error, setData: setPosts } = useFetch<PostContent[]>("http://localhost:8000/posts");
+  const {
+    data: posts,
+    isLoading,
+    error,
+    setData: setPosts,
+  } = useFetch<PostContent[]>("https://api-liferay.onrender.com/posts");
 
   //  modal
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,7 +30,7 @@ const Main = ({ searchQuery }: MainProps) => {
 
   //DELETE
   const handleDelete = (id: number | string) => {
-    fetch("http://localhost:8000/posts/" + id, {
+    fetch("https://api-liferay.onrender.com/posts/" + id, {
       method: "DELETE",
     })
       .then((response) => {
@@ -43,7 +48,7 @@ const Main = ({ searchQuery }: MainProps) => {
   //ADD
   const handleAddPost = (title: string, content: string) => {
     const post = { title, content };
-    fetch("http://localhost:8000/posts", {
+    fetch("https://api-liferay.onrender.com/posts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(post),

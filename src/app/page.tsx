@@ -15,7 +15,7 @@ export default function Home() {
   const [selectedCard, setSelectedCard] = useState<CardMeetup | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [search, setSearch] = useState("");
-  const { data: meetup, isLoading, error } = useFetch<CardMeetup[]>("http://localhost:8000/meetup");
+  const { data: meetup, isLoading, error } = useFetch<CardMeetup[]>("https://api-liferay.onrender.com/meetup");
   const handleCardClick = (card: CardMeetup) => {
     setSelectedCard(card);
     setIsModalOpen(true);
