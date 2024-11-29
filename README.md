@@ -16,16 +16,16 @@ O portal centraliza conteúdos e funcionalidades dispersos, facilitando o acesso
 ## 🛠️ **Tecnologias Utilizadas**
 
 ### **Frontend:**
-- React.js (com TypeScript)
-- CSS Modules / TailwindCSS
-- Axios (para chamadas de API)
-- React Router
+
+- React.js + next.js + Typescript
+- CSS Modules
 
 ### **Backend:**
+
 - Mock de dados com API JSON (JSON Server)
-- Firebase (para futuras evoluções)
 
 ### **Gerenciamento de Versão:**
+
 - Git e GitHub (com GitFlow)
 
 ---
@@ -50,7 +50,9 @@ No diretório raiz, instale as dependências do projeto:
 ```bash
 npm install
 ```
-*Ou, se estiver usando Yarn:*
+
+_Ou, se estiver usando Yarn:_
+
 ```bash
 yarn install
 ```
@@ -68,7 +70,7 @@ yarn install
 2. Execute o servidor de mock de dados:
 
    ```bash
-   json-server --watch db.json --port 3000
+   json-server --watch db.json --port 8000
    ```
 
 ---
@@ -80,30 +82,15 @@ Inicie o servidor de desenvolvimento do React:
 ```bash
 npm run dev
 ```
-*Ou com Yarn:*
+
+_Ou com Yarn:_
+
 ```bash
 yarn dev
 ```
 
 Acesse a aplicação no navegador:  
 `http://localhost:****`
-
----
-
-### 📲 **5. (Opcional) Executar em Ambiente Mobile**
-
-Se desejar executar em um simulador:
-
-1. Certifique-se de ter o ambiente React Native configurado (Android ou iOS).
-2. Na pasta do projeto mobile:
-
-   ```bash
-   yarn android
-   ```
-   *Para iOS:*
-   ```bash
-   yarn ios
-   ```
 
 ---
 
